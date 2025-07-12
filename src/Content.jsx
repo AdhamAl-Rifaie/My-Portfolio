@@ -17,7 +17,19 @@ import Contact from './Contact';
 import ScrollProgressLine from './ScrollLine';
 import { TypeAnimation } from 'react-type-animation';
 
-
+<TypeAnimation
+  sequence={[
+    'Hello World!',
+    1000,
+    'This is a typing effect',
+    1000,
+    'React is awesome!',
+    1000
+  ]}
+  wrapper="span"
+  speed={50}
+  repeat={Infinity}
+/>
 const Content = () => {
   const [modalData, setModalData] = useState({
     title: '',
@@ -85,7 +97,7 @@ const Content = () => {
         <Navbar />
         <div className="container d-flex justify-content-center align-items-center h-75">
           <div className="row justify-content-evenly w-100 align-items-center">
-            <div className="leftText col-lg-5 col-md-6 col-12 mb-4 mb-md-0">
+            <div className="leftText col-lg-5 col-md-6 col-12 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1900">
               <span className='d-block mb-3 fs-5 '>Hi, I'm</span>
               <TypeAnimation
                   sequence={[
@@ -113,16 +125,12 @@ const Content = () => {
               </button>
             </div>
 
-            <div className="rightText col-lg-5 col-md-6 col-12">
+            <div className="rightText col-lg-5 col-md-6 col-12" data-aos="fade-left" data-aos-duration="1900">
               <p className='lead mb-4 fs-6 fs-md-5 lh-base'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, odit? 
-                Quos debitis ullam quasi aliquam eveniet pariatur libero error, enim animi. 
-                Fugiat velit voluptatibus eum.
+              Meet Adham, a 20-year-old <b>AI student at Delta University</b> who teaches machines how to think (surprisingly tricky!). As a full-stack developer, I build custom websites that practically know your coffee order. Need a sleek site or web app? I've got you covered – no 2003 vibes, promise!
               </p>
               <p className='mb-4 fs-6 fs-md-5 lh-base'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, odit? 
-                Quos debitis ullam quasi aliquam eveniet pariatur libero error, enim animi. 
-                Fugiat velit voluptatibus eum.
+                When not wrestling CSS at 3 AM, I create AI projects almost as smart as me on good days. From chatbots that get you to pizza-spotting computer vision, I bring AI to life. Need a website or AI solution? I'm your guy – just don't ask about printers, that's beyond all intelligence!
               </p>
               <div className="Technologies d-flex justify-content-between">
                 <FontAwesomeIcon  icon={faHtml5} className="ms-1 icon" />
@@ -217,7 +225,7 @@ const Content = () => {
                       <div key={index} className="col-md-6 col-lg-4 h-100">
                         <div className="image-container">
                           <img 
-                            src={`./media/${image}`} 
+                            src={`${image}`} 
                             alt={`${modalData.title} screenshot ${index + 1}`}
                             className="img-fluid rounded shadow-sm modal-image"
                             style={{

@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg px-3 ">
         <div className="container-fluid">
           {/* Left side - Brand and Button */}
-          <div className="d-flex align-items-center leftBrand glass-effect justify-content-between ps-4 pe-2 py-1">
+          <div className="d-flex align-items-center leftBrand glass-effect justify-content-between ps-4 pe-2 py-1" data-aos="fade-down" data-aos-duration="1000">
             <a className="navbar-brand me-3" href="#">Adham.</a>
              <a href="https://wa.me/+201011694656" target="_blank" rel="noopener noreferrer" >
               <button className="btn px-3 btn-sm">
@@ -39,7 +39,7 @@ const Navbar = () => {
           
           {/* Collapsible content */}
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav ms-auto " data-aos="fade-down" data-aos-duration="1000">
               <li className="nav-item">
                 <a target='_blank' className="nav-link me-3 " aria-current="page" href="https://www.linkedin.com/in/adham-elrefai-32a87b217/"><FontAwesomeIcon icon={faLinkedin} className="me-1" /> LinkedIn</a>
               </li>
