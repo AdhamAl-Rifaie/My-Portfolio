@@ -17,6 +17,7 @@ import Contact from './Contact';
 import ScrollProgressLine from './ScrollLine';
 import { TypeAnimation } from 'react-type-animation';
 
+
 <TypeAnimation
   sequence={[
     'Hello World!',
@@ -233,7 +234,8 @@ const Content = () => {
                               height: '200px',
                               objectFit: 'cover',
                               cursor: 'pointer',
-                              transition: 'transform 0.3s ease'
+                              transition: 'transform 0.3s ease',
+                              loading: 'lazy',
                             }}
                             onClick={(e) => {
                             if (e.target.style.transform === 'scale(2)') {

@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-content">
           {/* Logo Section */}
           <div className="footer-logo">
-            <img src="logo.png" alt="Adham Al-Rifaie Logo" className="logo-img"/>
+            <img src="media/logo.png" alt="Adham Al-Rifaie Logo" className="logo-img"/>
             <h5 className="brand-name">Adham Al-Rifaie</h5>
           </div>
 

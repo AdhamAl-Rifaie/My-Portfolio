@@ -17,7 +17,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 120%; 
-  background-image: url('../media/bg.jpeg');
+  background-image: url('/My-Portfolio/media/bg.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: scroll; 
@@ -204,9 +204,7 @@ div.aboutMe {
 .modal-footer a {
   text-decoration: none;
 }
-div.projectsBox{
- 
-}
+
 /* ABOUT ME */
 
 /* Contact */
