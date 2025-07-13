@@ -225,7 +225,7 @@ const Content = () => {
                       <div key={index} className="col-md-6 col-lg-4 h-100">
                         <div className="image-container">
                           <img 
-                            src={`${image}`} 
+                            src={`media/${image}`} 
                             alt={`${modalData.title} screenshot ${index + 1}`}
                             className="img-fluid rounded shadow-sm modal-image"
                             style={{
